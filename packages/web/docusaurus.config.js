@@ -11,7 +11,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://entredata.org',
+  url: 'https://ccdarvin.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/entredata/',
@@ -20,6 +20,8 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'ccdarvin', // Usually your GitHub org/user name.
   projectName: 'entredata', // Usually your repo name.
+  deploymentBranch: 'gh-pages', // The branch of your docs repo that you are publishing to GitHub pages
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -28,16 +30,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'es',
-    locales: ['en', 'es'],
-    localeConfigs: {
-      en: {
-        label: 'English',
-      },
-      es: {
-        label: 'Español',
-      }
-    }
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 
   presets: [
