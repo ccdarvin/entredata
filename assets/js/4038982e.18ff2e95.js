@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkarticles=self.webpackChunkarticles||[]).push([[9938],{5111:e=>{e.exports=JSON.parse('{"label":"hello","permalink":"/entredata/blog/tags/hello","allTagsPath":"/entredata/blog/tags","count":2}')}}]);
