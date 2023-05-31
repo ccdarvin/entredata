@@ -14,7 +14,7 @@ const config = {
   url: 'https://ccdarvin.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/entredata/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -30,8 +30,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'es',
+    locales: ['es'],
   },
 
   presets: [
@@ -39,19 +39,13 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        docs: false,
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           path: 'articles',
-          routeBasePath: 'articles',
+          routeBasePath: '/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -72,7 +66,7 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {to: '/articles', label: 'Artículos', position: 'left'},
+          {to: '/tutorials', label: 'Artículos', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -104,8 +98,8 @@ const config = {
             title: 'Más',
             items: [
               {
-                label: 'Actículos',
-                to: '/articles',
+                label: 'Tutoriales',
+                to: '/tutorials',
               },
               {
                 label: 'GitHub',
