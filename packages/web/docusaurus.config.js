@@ -52,8 +52,6 @@ const config = {
           // Remove this to remove the "edit this page" links.
           path: 'articles',
           routeBasePath: 'articles',
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -86,15 +84,6 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
             title: 'Community',
             items: [
               {
@@ -112,11 +101,11 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: 'Más',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Actículos',
+                to: '/articles',
               },
               {
                 label: 'GitHub',
@@ -125,7 +114,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} entredata.org`,
       },
       prism: {
         theme: lightCodeTheme,
