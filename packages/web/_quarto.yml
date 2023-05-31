@@ -1,0 +1,7 @@
+project:
+  type: docusaurus
+  
+execute: 
+  warning: false
+
+biliography: references.lib
