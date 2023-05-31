@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkweb=self.webpackChunkweb||[]).push([[749],{4861:e=>{e.exports=JSON.parse('{"label":"line_profiler","permalink":"/tags/line-profiler","allTagsPath":"/tags","count":1}')}}]);

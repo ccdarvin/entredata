@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkweb=self.webpackChunkweb||[]).push([[785],{9148:e=>{e.exports=JSON.parse('{"label":"line_profiler","permalink":"/entredata/articles/tags/line-profiler","allTagsPath":"/entredata/articles/tags","count":1}')}}]);
