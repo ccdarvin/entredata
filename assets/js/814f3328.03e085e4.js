@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkweb=self.webpackChunkweb||[]).push([[535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Comando m\xe1gico timeit - jupyter","permalink":"/articles/comando-magico-timeit-jupyter"}]}')}}]);
