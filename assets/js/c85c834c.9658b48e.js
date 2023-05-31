@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkweb=self.webpackChunkweb||[]).push([[360],{321:e=>{e.exports=JSON.parse('{"label":"perfilar","permalink":"/entredata/articles/tags/perfilar","allTagsPath":"/entredata/articles/tags","count":1}')}}]);

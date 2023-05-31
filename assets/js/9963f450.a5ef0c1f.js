@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkweb=self.webpackChunkweb||[]).push([[427],{8233:a=>{a.exports=JSON.parse('{"label":"magic command","permalink":"/articles/tags/magic-command","allTagsPath":"/articles/tags","count":1}')}}]);
