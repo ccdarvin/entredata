@@ -24,7 +24,7 @@ jobs:
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
         with:
-          path: ./packages/web
+          path: ./packages/docsWeb
 
       - name: Install dependencies
         run: npm install 
