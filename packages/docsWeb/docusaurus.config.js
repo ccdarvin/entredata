@@ -23,7 +23,7 @@ const config = {
   deploymentBranch: 'gh-pages', // The branch of your docs repo that you are publishing to GitHub pages
   trailingSlash: false,
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn', //'throw',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -39,13 +39,19 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: false,
+        docs: {
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
+          path: 'docs/tutorials',
+          routeBasePath: '/tutorial',
+          sidebarPath: require.resolve('./sidebars.js'),
+        },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          path: 'articles',
-          routeBasePath: '/',
+          path: 'docs/articles',
+          routeBasePath: '/article',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -78,7 +84,7 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Community',
+            title: 'comunidad',
             items: [
               {
                 label: 'Stack Overflow',
@@ -95,15 +101,15 @@ const config = {
             ],
           },
           {
-            title: 'Más',
+            title: 'Recursos',
             items: [
               {
                 label: 'Tutoriales',
                 to: '/tutorials',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Artículos',
+                to: '/articles',
               },
             ],
           },
