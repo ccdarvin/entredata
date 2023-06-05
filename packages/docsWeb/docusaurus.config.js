@@ -31,7 +31,15 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'es',
-    locales: ['es'],
+    locales: ['es', 'en'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+      },
+      es: {
+        label: 'Español',
+      },
+    },
   },
 
   presets: [
@@ -42,7 +50,6 @@ const config = {
         docs: {
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
-          path: 'docs/tutorials',
           routeBasePath: '/tutorial',
           sidebarPath: require.resolve('./sidebars.js'),
         },
@@ -50,7 +57,6 @@ const config = {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          path: 'docs/articles',
           routeBasePath: '/article',
         },
         theme: {
@@ -72,7 +78,11 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {to: '/tutorials', label: 'Artículos', position: 'left'},
+          {to: '/tutorial', label: 'Artículos', position: 'left'},
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -105,11 +115,11 @@ const config = {
             items: [
               {
                 label: 'Tutoriales',
-                to: '/tutorials',
+                to: '/tutorial',
               },
               {
                 label: 'Artículos',
-                to: '/articles',
+                to: '/article',
               },
             ],
           },

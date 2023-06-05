@@ -1,16 +1,17 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import Translate, {translate} from '@docusaurus/Translate';
 
 type FeatureItem = {
-  title: string;
+  title: JSX.Element | string;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   description: JSX.Element;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Articulos',
+    title: <Translate>Articulos</Translate>,
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
@@ -19,7 +20,7 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Tutoriales',
+    title: <Translate>Tutoriales</Translate>,
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>

@@ -1,0 +1,18 @@
+{
+  "title": {
+    "message": "Entredata.org",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Entredata.org",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Artículos": {
+    "message": "Artículos",
+    "description": "Navbar item with label Artículos"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}
