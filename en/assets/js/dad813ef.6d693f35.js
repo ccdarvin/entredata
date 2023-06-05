@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[2069],{7526:e=>{e.exports=JSON.parse('{"label":"optimizar c\xf3digo","permalink":"/en/article/tags/optimizar-codigo","allTagsPath":"/en/article/tags","count":1}')}}]);

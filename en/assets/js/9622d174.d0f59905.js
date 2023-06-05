@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[85],{9791:s=>{s.exports=JSON.parse('{"label":"distribuci\xf3n estad\xedstica","permalink":"/en/article/tags/distribucion-estadistica","allTagsPath":"/en/article/tags","count":1}')}}]);

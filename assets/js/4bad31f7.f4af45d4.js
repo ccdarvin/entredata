@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[3918],{1316:e=>{e.exports=JSON.parse('{"label":"timeit","permalink":"/article/tags/timeit","allTagsPath":"/article/tags","count":1}')}}]);
