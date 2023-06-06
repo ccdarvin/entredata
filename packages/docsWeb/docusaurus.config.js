@@ -55,6 +55,7 @@ const config = {
         },
         blog: {
           showReadingTime: true,
+          blogTitle: 'Artículos',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           routeBasePath: '/article',
