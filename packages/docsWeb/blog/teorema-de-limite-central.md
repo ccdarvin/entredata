@@ -68,7 +68,11 @@ Como podemos ver, a medida que aumentamos el número de experimentos, la
 distribución de las medias muestrales se aproxima a una distribución
 normal.
 
+:::caution
+
 Si tu ejecutas este código, los resultados pueden van a ser diferentes a
 los que se muestran en este ejemplo, debido a que estamos trabajando con
 números aleatorios.
+
+:::
 
