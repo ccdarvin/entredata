@@ -4,7 +4,7 @@
         <title>Entredata.org Blog</title>
         <link>https://ccdarvin.github.io/en/article</link>
         <description>Entredata.org Blog</description>
-        <lastBuildDate>Tue, 06 Jun 2023 05:36:21 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 06 Jun 2023 05:50:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[Teorema de limite central]]></title>
             <link>https://ccdarvin.github.io/en/article/teorema-de-limite-central</link>
             <guid>https://ccdarvin.github.io/en/article/teorema-de-limite-central</guid>
-            <pubDate>Tue, 06 Jun 2023 05:36:21 GMT</pubDate>
+            <pubDate>Tue, 06 Jun 2023 05:50:01 GMT</pubDate>
             <description><![CDATA[El Teorema de límite central (TLC) es un resultado fundamental en estadística.]]></description>
             <content:encoded><![CDATA[<p>El teorema del límite central (TLC) establece que, para una muestra
 aleatoria de tamaño <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal">n</span></span></span></span></span>, la distribución de las medias muestrales se
@@ -43,7 +43,7 @@ generados de forma aleatoria.</p></div></div>]]></content:encoded>
             <title><![CDATA[Comando mágico timeit - jupyter]]></title>
             <link>https://ccdarvin.github.io/en/article/comando-magico-timeit-jupyter</link>
             <guid>https://ccdarvin.github.io/en/article/comando-magico-timeit-jupyter</guid>
-            <pubDate>Tue, 06 Jun 2023 05:36:20 GMT</pubDate>
+            <pubDate>Tue, 06 Jun 2023 05:50:00 GMT</pubDate>
             <description><![CDATA[El comando mágico %timeit en Jupyter Lab es una forma conveniente de medir el tiempo de ejecución de una expresión o una función directamente en tus celdas de código. Puedes utilizar %timeit para obtener rápidamente el tiempo promedio de ejecución y comparar diferentes enfoques de implementación.]]></description>
             <content:encoded><![CDATA[<p>El comando mágico <code>%timeit</code> en Jupyter Lab es una forma conveniente de
 medir el tiempo de ejecución de una expresión o una función directamente
@@ -84,7 +84,7 @@ implementación.</p>]]></content:encoded>
             <title><![CDATA[Articulos]]></title>
             <link>https://ccdarvin.github.io/en/article/index</link>
             <guid>https://ccdarvin.github.io/en/article/index</guid>
-            <pubDate>Tue, 06 Jun 2023 05:35:27 GMT</pubDate>
+            <pubDate>Tue, 06 Jun 2023 05:48:46 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Distribución binomial - python]]></title>
