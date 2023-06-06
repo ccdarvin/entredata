@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[7052],{6195:e=>{e.exports=JSON.parse('{"permalink":"/en/article/tags/line-profiler","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Art\xedculos"}')}}]);

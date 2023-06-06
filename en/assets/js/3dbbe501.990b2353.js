@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[4640],{4397:e=>{e.exports=JSON.parse('{"label":"teorema de l\xedmite central","permalink":"/en/article/tags/teorema-de-limite-central","allTagsPath":"/en/article/tags","count":1}')}}]);

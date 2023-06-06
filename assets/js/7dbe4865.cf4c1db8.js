@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[3368],{4621:e=>{e.exports=JSON.parse('{"permalink":"/article/tags/distribucion-estadistica","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Art\xedculos"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[7628],{4222:e=>{e.exports=JSON.parse('{"permalink":"/en/article/tags/magic-command","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Art\xedculos"}')}}]);
