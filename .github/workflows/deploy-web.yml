@@ -18,17 +18,15 @@ jobs:
           node-version: 18
           cache: npm
 
-      - name: Folder where work Quarto
-        run: cd packages/docsWeb
-
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          tinytex: true
 
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
-
-      - name: Main Folder
-        run: cd ../..
+        with:
+          path: ./packages/docsWeb
 
       - name: Install dependencies
         run: npm install 
