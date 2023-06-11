@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[9137],{4857:e=>{e.exports=JSON.parse('{"label":"Expresiones regulares","permalink":"/en/article/tags/expresiones-regulares","allTagsPath":"/en/article/tags","count":1}')}}]);
