@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[6251],{3745:e=>{e.exports=JSON.parse('{"label":"Arbol de Desici\xf3n","permalink":"/article/tags/arbol-de-desicion","allTagsPath":"/article/tags","count":1}')}}]);
