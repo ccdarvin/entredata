@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[8419],{5210:e=>{e.exports=JSON.parse('{"label":"arboles de decisi\xf3n","permalink":"/en/article/tags/arboles-de-decision","allTagsPath":"/en/article/tags","count":1}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[4898],{3267:e=>{e.exports=JSON.parse('{"label":"metodos de ensamble","permalink":"/en/article/tags/metodos-de-ensamble","allTagsPath":"/en/article/tags","count":1}')}}]);
