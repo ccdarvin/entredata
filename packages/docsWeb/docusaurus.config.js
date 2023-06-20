@@ -74,7 +74,7 @@ const config = {
             type: 'all',
             title: 'Articulos en entredata.org',
             description: 'Articulos sobre programación, machine learning, inteligencia artificial, ciencia de datos, etc.',
-            link: 'https://docs.entredata.org/article/feed.xml'
+            copyright: `Copyright © ${new Date().getFullYear()} entredata.org`,
           }
         },
         theme: {
