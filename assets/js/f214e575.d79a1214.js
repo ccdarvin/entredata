@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[3818],{8787:e=>{e.exports=JSON.parse('{"permalink":"/article/tags/apply","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Art\xedculos"}')}}]);

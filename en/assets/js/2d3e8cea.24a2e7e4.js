@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[7509],{3569:e=>{e.exports=JSON.parse('{"label":"vectorize","permalink":"/en/article/tags/vectorize","allTagsPath":"/en/article/tags","count":1}')}}]);
