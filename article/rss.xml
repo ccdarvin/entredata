@@ -35,7 +35,7 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
             <title><![CDATA[Teorema de limite central]]></title>
             <link>https://ccdarvin.github.io/article/teorema-de-limite-central</link>
             <guid>https://ccdarvin.github.io/article/teorema-de-limite-central</guid>
-            <pubDate>Tue, 20 Jun 2023 04:48:33 GMT</pubDate>
+            <pubDate>Tue, 20 Jun 2023 15:03:07 GMT</pubDate>
             <description><![CDATA[El Teorema de límite central (TLC) es un resultado fundamental en estadística.]]></description>
             <content:encoded><![CDATA[<p>El teorema del límite central (TLC) establece que, para una muestra
 aleatoria de tamaño <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal">n</span></span></span></span></span>, la distribución de las medias muestrales se
@@ -66,7 +66,7 @@ generados de forma aleatoria.</p></div></div>]]></content:encoded>
             <title><![CDATA[Comando mágico timeit - jupyter]]></title>
             <link>https://ccdarvin.github.io/article/comando-magico-timeit-jupyter</link>
             <guid>https://ccdarvin.github.io/article/comando-magico-timeit-jupyter</guid>
-            <pubDate>Tue, 20 Jun 2023 04:48:31 GMT</pubDate>
+            <pubDate>Tue, 20 Jun 2023 15:03:07 GMT</pubDate>
             <description><![CDATA[El comando mágico %timeit en Jupyter Lab es una forma conveniente de medir el tiempo de ejecución de una expresión o una función directamente en tus celdas de código. Puedes utilizar %timeit para obtener rápidamente el tiempo promedio de ejecución y comparar diferentes enfoques de implementación.]]></description>
             <content:encoded><![CDATA[<p>El comando mágico <code>%timeit</code> en Jupyter Lab es una forma conveniente de
 medir el tiempo de ejecución de una expresión o una función directamente
@@ -107,7 +107,7 @@ implementación.</p>]]></content:encoded>
             <title><![CDATA[Articulos]]></title>
             <link>https://ccdarvin.github.io/article/index</link>
             <guid>https://ccdarvin.github.io/article/index</guid>
-            <pubDate>Tue, 20 Jun 2023 04:47:27 GMT</pubDate>
+            <pubDate>Tue, 20 Jun 2023 15:01:25 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Expresiones regulares en Python]]></title>

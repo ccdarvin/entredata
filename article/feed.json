@@ -27,7 +27,7 @@
             "url": "https://ccdarvin.github.io/article/teorema-de-limite-central",
             "title": "Teorema de limite central",
             "summary": "El Teorema de límite central (TLC) es un resultado fundamental en estadística.",
-            "date_modified": "2023-06-20T04:48:33.152Z",
+            "date_modified": "2023-06-20T15:03:07.973Z",
             "tags": [
                 "estadística",
                 "probabilidad",
@@ -40,7 +40,7 @@
             "url": "https://ccdarvin.github.io/article/comando-magico-timeit-jupyter",
             "title": "Comando mágico timeit - jupyter",
             "summary": "El comando mágico %timeit en Jupyter Lab es una forma conveniente de medir el tiempo de ejecución de una expresión o una función directamente en tus celdas de código. Puedes utilizar %timeit para obtener rápidamente el tiempo promedio de ejecución y comparar diferentes enfoques de implementación.",
-            "date_modified": "2023-06-20T04:48:31.940Z",
+            "date_modified": "2023-06-20T15:03:07.081Z",
             "author": {
                 "name": "Darvin Cotrina",
                 "url": "https://github.com/ccdarvin"
@@ -57,7 +57,7 @@
             "content_html": "",
             "url": "https://ccdarvin.github.io/article/index",
             "title": "Articulos",
-            "date_modified": "2023-06-20T04:47:27.000Z",
+            "date_modified": "2023-06-20T15:01:25.000Z",
             "tags": []
         },
         {
