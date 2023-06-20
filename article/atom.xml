@@ -38,7 +38,7 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
         <title type="html"><![CDATA[Teorema de limite central]]></title>
         <id>https://ccdarvin.github.io/article/teorema-de-limite-central</id>
         <link href="https://ccdarvin.github.io/article/teorema-de-limite-central"/>
-        <updated>2023-06-20T15:03:07.973Z</updated>
+        <updated>2023-06-20T15:11:39.155Z</updated>
         <summary type="html"><![CDATA[El Teorema de límite central (TLC) es un resultado fundamental en estadística.]]></summary>
         <content type="html"><![CDATA[<p>El teorema del límite central (TLC) establece que, para una muestra
 aleatoria de tamaño <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal">n</span></span></span></span></span>, la distribución de las medias muestrales se
@@ -69,7 +69,7 @@ generados de forma aleatoria.</p></div></div>]]></content>
         <title type="html"><![CDATA[Comando mágico timeit - jupyter]]></title>
         <id>https://ccdarvin.github.io/article/comando-magico-timeit-jupyter</id>
         <link href="https://ccdarvin.github.io/article/comando-magico-timeit-jupyter"/>
-        <updated>2023-06-20T15:03:07.081Z</updated>
+        <updated>2023-06-20T15:11:38.239Z</updated>
         <summary type="html"><![CDATA[El comando mágico %timeit en Jupyter Lab es una forma conveniente de medir el tiempo de ejecución de una expresión o una función directamente en tus celdas de código. Puedes utilizar %timeit para obtener rápidamente el tiempo promedio de ejecución y comparar diferentes enfoques de implementación.]]></summary>
         <content type="html"><![CDATA[<p>El comando mágico <code>%timeit</code> en Jupyter Lab es una forma conveniente de
 medir el tiempo de ejecución de una expresión o una función directamente
@@ -114,7 +114,7 @@ implementación.</p>]]></content>
         <title type="html"><![CDATA[Articulos]]></title>
         <id>https://ccdarvin.github.io/article/index</id>
         <link href="https://ccdarvin.github.io/article/index"/>
-        <updated>2023-06-20T15:01:25.000Z</updated>
+        <updated>2023-06-20T15:09:59.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[Expresiones regulares en Python]]></title>
