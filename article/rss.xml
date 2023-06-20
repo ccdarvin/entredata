@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Articulos en entredata.org</title>
-        <link>https://ccdarvin.github.io/article</link>
+        <link>https://docs.entredata.org/article</link>
         <description>Articulos sobre programación, machine learning, inteligencia artificial, ciencia de datos, etc.</description>
         <lastBuildDate>Tue, 27 Jun 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -11,8 +11,8 @@
         <copyright>Copyright © 2023 entredata.org</copyright>
         <item>
             <title><![CDATA[Arboles de decisión y métodos de ensamble]]></title>
-            <link>https://ccdarvin.github.io/article/arboles-decision-ensamble</link>
-            <guid>https://ccdarvin.github.io/article/arboles-decision-ensamble</guid>
+            <link>https://docs.entredata.org/article/arboles-decision-ensamble</link>
+            <guid>https://docs.entredata.org/article/arboles-decision-ensamble</guid>
             <pubDate>Tue, 27 Jun 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[¿Que es un árbol de decisión?]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_fF9Z" id="que-es-un-árbol-de-decisión">¿Que es un árbol de decisión?<a href="#que-es-un-árbol-de-decisión" class="hash-link" aria-label="Enlace directo al ¿Que es un árbol de decisión?" title="Enlace directo al ¿Que es un árbol de decisión?">​</a></h2><p>Un árbol de decisión es un modelo de predicción utilizado en el ámbito de la inteligencia artificial. Dada una base de datos se construye un árbol de decisión para poder llegar a la conclusión deseada. Es una herramienta de apoyo para la toma de decisiones.</p><h2 class="anchor anchorWithStickyNavbar_fF9Z" id="que-es-un-método-de-ensamblaje">¿Que es un método de ensamblaje?<a href="#que-es-un-método-de-ensamblaje" class="hash-link" aria-label="Enlace directo al ¿Que es un método de ensamblaje?" title="Enlace directo al ¿Que es un método de ensamblaje?">​</a></h2><p>Los métodos de ensamblaje son métodos que combinan varios algoritmos de aprendizaje automático para obtener un mejor rendimiento predictivo que un solo algoritmo de aprendizaje automático. Los métodos de ensamblaje funcionan mejor cuando los predictores individuales están correlacionados entre sí.</p><h3 class="anchor anchorWithStickyNavbar_fF9Z" id="muestras-con-reemplazo">Muestras con reemplazo<a href="#muestras-con-reemplazo" class="hash-link" aria-label="Enlace directo al Muestras con reemplazo" title="Enlace directo al Muestras con reemplazo">​</a></h3><p>En estadística, el muestreo con reemplazo es un método de muestreo en el que, para cada extracción, el elemento elegido se devuelve a la población y se mezcla con el resto de elementos. El muestreo con reemplazo es un método de muestreo no exhaustivo.</p><p><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><mi>N</mi></mfrac></mrow><annotation encoding="application/x-tex">P(x_i) = \frac{1}{N}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.13889em">P</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1.1901em;vertical-align:-0.345em"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em"><span style="top:-2.655em"><span class="pstrut" style="height:3em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.10903em">N</span></span></span></span><span style="top:-3.23em"><span class="pstrut" style="height:3em"></span><span class="frac-line" style="border-bottom-width:0.04em"></span></span><span style="top:-3.394em"><span class="pstrut" style="height:3em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p><p>En arboles de decisión se utiliza el muestreo con reemplazo para generar los árboles de decisión que se utilizaran para el ensamblaje, es decir, se generan varios árboles de decisión con muestras de la base de datos original, y se combinan para generar un modelo más robusto.</p><h2 class="anchor anchorWithStickyNavbar_fF9Z" id="random-forest">Random Forest<a href="#random-forest" class="hash-link" aria-label="Enlace directo al Random Forest" title="Enlace directo al Random Forest">​</a></h2><p>Random Forest es un método de ensamblaje que combina varios árboles de decisión, cada uno de los cuales se genera con una muestra de la base de datos original, y se combinan para generar un modelo más robusto. esteme metodo usa el muestreo con reemplazo para generar los árboles de decisión.</p><p>Tenemos un datos de entrenamiento de tamaño <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal">m</span></span></span></span></span></p><ul><li>para b = 1 hasta B: Utilizamos el muestreo con reemplazo para generar una muestra de tamaño <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal">m</span></span></span></span></span> de la base de datos original. Entrenamos un árbol de decisión <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>b</mi></msub></mrow><annotation encoding="application/x-tex">T_b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em"><span class="pstrut" style="height:2.7em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">b</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em"><span></span></span></span></span></span></span></span></span></span></span> con la muestra generada.</li><li>Se obtiene el modelo final combinando los <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.05017em">B</span></span></span></span></span> árboles de decisión generados.</li></ul><p>Cuando usamos este algorithmo, muchas veces tenemos la misma división en el nodo raíz, por lo que podemos modificar un poco el algorithmo para que esto no suceda, y así obtener un mejor modelo.</p><h3 class="anchor anchorWithStickyNavbar_fF9Z" id="elección-de-características-aleatorias">Elección de características aleatorias<a href="#elección-de-características-aleatorias" class="hash-link" aria-label="Enlace directo al Elección de características aleatorias" title="Enlace directo al Elección de características aleatorias">​</a></h3><p>En cada nodo, se elige un subconjunto aleatorio de <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord mathnormal" style="margin-right:0.03148em">k</span></span></span></span></span> características de todo el conjunto de características. si <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal">n</span></span></span></span></span> es el número total de características, se recomienda <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><msqrt><mi>n</mi></msqrt></mrow><annotation encoding="application/x-tex">k = \sqrt{n}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord mathnormal" style="margin-right:0.03148em">k</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1.04em;vertical-align:-0.2397em"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8003em"><span class="svg-align" style="top:-3em"><span class="pstrut" style="height:3em"></span><span class="mord" style="padding-left:0.833em"><span class="mord mathnormal">n</span></span></span><span style="top:-2.7603em"><span class="pstrut" style="height:3em"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em"><svg xmlns="http://www.w3.org/2000/svg" width="400em" height="1.08em" viewBox="0 0 400000 1080" preserveAspectRatio="xMinYMin slice"><path d="M95,702
@@ -33,9 +33,9 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
         </item>
         <item>
             <title><![CDATA[Teorema de limite central]]></title>
-            <link>https://ccdarvin.github.io/article/teorema-de-limite-central</link>
-            <guid>https://ccdarvin.github.io/article/teorema-de-limite-central</guid>
-            <pubDate>Tue, 20 Jun 2023 15:57:36 GMT</pubDate>
+            <link>https://docs.entredata.org/article/teorema-de-limite-central</link>
+            <guid>https://docs.entredata.org/article/teorema-de-limite-central</guid>
+            <pubDate>Tue, 20 Jun 2023 19:47:36 GMT</pubDate>
             <description><![CDATA[El Teorema de límite central (TLC) es un resultado fundamental en estadística.]]></description>
             <content:encoded><![CDATA[<p>El teorema del límite central (TLC) establece que, para una muestra
 aleatoria de tamaño <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal">n</span></span></span></span></span>, la distribución de las medias muestrales se
@@ -64,9 +64,9 @@ generados de forma aleatoria.</p></div></div>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Comando mágico timeit - jupyter]]></title>
-            <link>https://ccdarvin.github.io/article/comando-magico-timeit-jupyter</link>
-            <guid>https://ccdarvin.github.io/article/comando-magico-timeit-jupyter</guid>
-            <pubDate>Tue, 20 Jun 2023 15:57:35 GMT</pubDate>
+            <link>https://docs.entredata.org/article/comando-magico-timeit-jupyter</link>
+            <guid>https://docs.entredata.org/article/comando-magico-timeit-jupyter</guid>
+            <pubDate>Tue, 20 Jun 2023 19:47:35 GMT</pubDate>
             <description><![CDATA[El comando mágico %timeit en Jupyter Lab es una forma conveniente de medir el tiempo de ejecución de una expresión o una función directamente en tus celdas de código. Puedes utilizar %timeit para obtener rápidamente el tiempo promedio de ejecución y comparar diferentes enfoques de implementación.]]></description>
             <content:encoded><![CDATA[<p>El comando mágico <code>%timeit</code> en Jupyter Lab es una forma conveniente de
 medir el tiempo de ejecución de una expresión o una función directamente
@@ -105,14 +105,14 @@ implementación.</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Articulos]]></title>
-            <link>https://ccdarvin.github.io/article/index</link>
-            <guid>https://ccdarvin.github.io/article/index</guid>
-            <pubDate>Tue, 20 Jun 2023 15:56:38 GMT</pubDate>
+            <link>https://docs.entredata.org/article/index</link>
+            <guid>https://docs.entredata.org/article/index</guid>
+            <pubDate>Tue, 20 Jun 2023 19:46:22 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Expresiones regulares en Python]]></title>
-            <link>https://ccdarvin.github.io/article/expresiones-regulares-python</link>
-            <guid>https://ccdarvin.github.io/article/expresiones-regulares-python</guid>
+            <link>https://docs.entredata.org/article/expresiones-regulares-python</link>
+            <guid>https://docs.entredata.org/article/expresiones-regulares-python</guid>
             <pubDate>Thu, 08 Jun 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Las expresiones regulares son una secuencia de caracteres que forman un]]></description>
             <content:encoded><![CDATA[<p>Las expresiones regulares son una secuencia de caracteres que forman un
@@ -135,8 +135,8 @@ consultar la documentación oficial de python en el siguiente enlace:
         </item>
         <item>
             <title><![CDATA[Distribución de poisson - python]]></title>
-            <link>https://ccdarvin.github.io/article/distribucion-de-poisson-python</link>
-            <guid>https://ccdarvin.github.io/article/distribucion-de-poisson-python</guid>
+            <link>https://docs.entredata.org/article/distribucion-de-poisson-python</link>
+            <guid>https://docs.entredata.org/article/distribucion-de-poisson-python</guid>
             <pubDate>Wed, 07 Jun 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[la Distribución de poisson es una distribución de probabilidad discreta que expresa la probabilidad de un número de eventos ocurridos en un intervalo de tiempo fijo si estos ocurren con una frecuencia media conocida e independientemente del tiempo transcurrido desde el evento anterior.]]></description>
             <category>probabilidad</category>
@@ -145,8 +145,8 @@ consultar la documentación oficial de python en el siguiente enlace:
         </item>
         <item>
             <title><![CDATA[Distribución binomial - python]]></title>
-            <link>https://ccdarvin.github.io/article/distribucion-binomial-python</link>
-            <guid>https://ccdarvin.github.io/article/distribucion-binomial-python</guid>
+            <link>https://docs.entredata.org/article/distribucion-binomial-python</link>
+            <guid>https://docs.entredata.org/article/distribucion-binomial-python</guid>
             <pubDate>Mon, 05 Jun 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Distribución binomial en python]]></description>
             <content:encoded><![CDATA[<p>La distribución binomial es un modelo de probabilidad discreta que
@@ -182,8 +182,8 @@ probabilidad.</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Vectorize de numpy vs apply de pandas]]></title>
-            <link>https://ccdarvin.github.io/article/vectorize de numpy vs apply de pandas</link>
-            <guid>https://ccdarvin.github.io/article/vectorize de numpy vs apply de pandas</guid>
+            <link>https://docs.entredata.org/article/vectorize de numpy vs apply de pandas</link>
+            <guid>https://docs.entredata.org/article/vectorize de numpy vs apply de pandas</guid>
             <pubDate>Thu, 01 Jun 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Tanto numpy como pandas tienen funciones que permiten aplicar una]]></description>
             <content:encoded><![CDATA[<p>Tanto numpy como pandas tienen funciones que permiten aplicar una
@@ -203,8 +203,8 @@ que apply.</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[¿Como perfilar código con line_profiler?]]></title>
-            <link>https://ccdarvin.github.io/article/perfilar-codigo-con-line-profiler</link>
-            <guid>https://ccdarvin.github.io/article/perfilar-codigo-con-line-profiler</guid>
+            <link>https://docs.entredata.org/article/perfilar-codigo-con-line-profiler</link>
+            <guid>https://docs.entredata.org/article/perfilar-codigo-con-line-profiler</guid>
             <pubDate>Wed, 03 May 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Perfilar código nos permite identificar las partes de nuestro código que son más lentas y optimizarlas.]]></description>
             <content:encoded><![CDATA[<p>¿Alguna vez has tenido que optimizar el código de un programa?
