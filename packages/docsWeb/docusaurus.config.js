@@ -69,7 +69,7 @@ const config = {
           rehypePlugins: [katex],
           include: ['*.md', '*.mdx'],
           blogSidebarTitle: 'Artículos recientes',
-          blogSidebarCount: '20',
+          blogSidebarCount: 20,
           feedOptions: {
             type: 'all',
             title: 'Articulos en entredata.org',
