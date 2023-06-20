@@ -67,6 +67,15 @@ const config = {
           routeBasePath: '/article',
           remarkPlugins: [math],
           rehypePlugins: [katex],
+          include: ['*.md', '*.mdx'],
+          blogSidebarTitle: 'Artículos recientes',
+          blogSidebarCount: '20',
+          feedOptions: {
+            type: 'all',
+            title: 'Articulos en entredata.org',
+            description: 'Articulos sobre programación, machine learning, inteligencia artificial, ciencia de datos, etc.',
+            link: 'https://docs.entredata.org/article/feed.xml'
+          }
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -95,7 +104,7 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {to: '/tutorial', label: 'Artículos', position: 'left'},
+          {to: '/article', label: 'Artículos', position: 'left'},
           {
             type: 'localeDropdown',
             position: 'right',
