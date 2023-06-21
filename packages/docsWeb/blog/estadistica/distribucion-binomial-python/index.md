@@ -77,7 +77,7 @@ fig.legend()
 fig.show()
 ```
 
-![](distribucion-binomial-python_files/figure-markdown_strict/cell-2-output-1.png)
+![](index_files/figure-markdown_strict/cell-2-output-1.png)
 
 Copo podemos ver en el grafico si usamos una probabilidad de ocurrencia
 del éxito de 0.5, la distribución es simétrica y si usamos una
@@ -123,7 +123,7 @@ plt.legend()
 plt.show()
 ```
 
-![](distribucion-binomial-python_files/figure-markdown_strict/cell-3-output-1.png)
+![](index_files/figure-markdown_strict/cell-3-output-1.png)
 
 ## Como generar números aleatorios con distribución binomial {#como-generar-números-aleatorios-con-distribución-binomial}
 
@@ -144,7 +144,7 @@ plt.plot(x, pmf_5, 'o-', label='p=0.5')
 plt.show()
 ```
 
-![](distribucion-binomial-python_files/figure-markdown_strict/cell-4-output-1.png)
+![](index_files/figure-markdown_strict/cell-4-output-1.png)
 
 Como hemos podido ver trabajar con distribuciones binomiales en python
 es muy sencillo y nos puede ayudar a resolver muchos problemas de
