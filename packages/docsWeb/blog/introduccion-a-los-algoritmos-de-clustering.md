@@ -1,7 +1,7 @@
 ---
 title: Clustering
 decription: Introducción a los algoritmos de clustering
-slug: clustering
+slug: introduccion-a-los-algoritmos-de-clustering
 date: 2023-06-04
 authors: [ccdarvin]
 tags: [clustering, machine learning]
