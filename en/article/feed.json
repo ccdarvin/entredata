@@ -27,7 +27,7 @@
             "url": "https://docs.entredata.org/en/article/comando-magico-timeit-jupyter",
             "title": "Comando mágico timeit - jupyter",
             "summary": "El comando mágico %timeit en Jupyter Lab es una forma conveniente de medir el tiempo de ejecución de una expresión o una función directamente en tus celdas de código. Puedes utilizar %timeit para obtener rápidamente el tiempo promedio de ejecución y comparar diferentes enfoques de implementación.",
-            "date_modified": "2023-06-21T05:27:46.000Z",
+            "date_modified": "2023-06-21T15:04:15.000Z",
             "author": {
                 "name": "Darvin Cotrina",
                 "url": "https://github.com/ccdarvin"
@@ -44,7 +44,7 @@
             "content_html": "",
             "url": "https://docs.entredata.org/en/article/index",
             "title": "Articulos",
-            "date_modified": "2023-06-21T05:27:46.000Z",
+            "date_modified": "2023-06-21T15:04:15.000Z",
             "tags": []
         },
         {
@@ -53,7 +53,7 @@
             "url": "https://docs.entredata.org/en/article/teorema-de-limite-central",
             "title": "Teorema de limite central",
             "summary": "El Teorema de límite central (TLC) es un resultado fundamental en estadística.",
-            "date_modified": "2023-06-21T05:27:46.000Z",
+            "date_modified": "2023-06-21T15:04:15.000Z",
             "tags": [
                 "estadística",
                 "probabilidad",
