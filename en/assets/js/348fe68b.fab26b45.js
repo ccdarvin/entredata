@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[1486],{3595:e=>{e.exports=JSON.parse('{"label":"estad\xedstica","permalink":"/en/article/tags/estadistica","allTagsPath":"/en/article/tags","count":2}')}}]);
