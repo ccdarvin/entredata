@@ -1,0 +1,49 @@
+.header {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 0.8rem;
+    padding: 15px 10px;
+    font-weight: 600;
+    background: #333;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/*print landscape*/
+@media print {
+    @page {
+        size: A4 landscape;
+        margin: 0;
+    }
+    .header {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        color: #333;
+    }
+}
+
+.container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 0.7rem;
+    --ifm-global-shadow-lw: None;
+}
+.container:hover {
+    font-size: 0.8rem;
+}
+
+.content>p {
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+.item + .item {
+    margin-top: 1rem;
+}
+  
+.item {
+    break-inside: avoid;
+}
+  
+.item::before {
+    counter-increment: grid;
+}

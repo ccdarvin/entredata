@@ -4,6 +4,10 @@
  * work well for content-centric websites.
  */
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #BB1F24;
@@ -27,4 +31,32 @@
   --ifm-color-primary-lighter: #CE3F40;
   --ifm-color-primary-lightest: #CE3F40;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+
+
+.plugin-id-cheat-sheets .markdown{
+  columns: 19rem;
+  gap: 1rem;
+  counter-reset: grid;
+}
+
+.plugin-id-cheat-sheets .col--7 {
+  --ifm-col-width: calc(9 / 12 * 100%);
+}
+@media (min-width: 1440px) {
+  .container.margin-vert--lg {
+    --ifm-container-width-xl: 1700px;
+  }
+}
+
+@media print {
+  .plugin-id-cheat-sheets .markdown{
+    columns: 18rem;
+    gap: 1rem;
+    counter-reset: grid;
+  }
+  .plugin-id-cheat-sheets .col--7 {
+    --ifm-col-width: 100%;
+  }
 }

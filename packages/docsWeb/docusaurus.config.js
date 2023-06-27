@@ -59,6 +59,7 @@ const config = {
           rehypePlugins: [katex],
           sidebarPath: require.resolve('./sidebars.js'),
         },
+
         blog: {
           showReadingTime: true,
           blogTitle: 'Artículos',
@@ -68,8 +69,8 @@ const config = {
           remarkPlugins: [math],
           rehypePlugins: [katex],
           include: ['*.md', '*.mdx'],
-          blogSidebarTitle: 'Artículos recientes',
           blogSidebarCount: 20,
+          blogSidebarTitle: 'Artículos recientes',
           feedOptions: {
             type: 'all',
             title: 'Articulos en entredata.org',
@@ -102,6 +103,22 @@ const config = {
       crossorigin: 'anonymous',
     },
   ],
+  plugins: [
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'cheat-sheets',
+        routeBasePath: 'cheat-sheets',
+        path: './cheat-sheets',
+        blogTitle: 'Cheat Sheets',
+        blogSidebarTitle: 'Cheat Sheets',
+        remarkPlugins: [math],
+        rehypePlugins: [katex],
+        include: ['*.md', '*.mdx'],
+        blogSidebarCount: 20,
+      }
+    ]
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -115,6 +132,8 @@ const config = {
         },
         items: [
           {to: '/article', label: 'Artículos', position: 'left'},
+          {to: '/cheat-sheets', label: 'Cheat Sheets', position: 'left'},
+          {to: '/tutorial', label: 'Tutoriales', position: 'left'},
           {
             type: 'localeDropdown',
             position: 'right',
@@ -156,6 +175,10 @@ const config = {
               {
                 label: 'Artículos',
                 to: '/article',
+              },
+              {
+                label: 'Cheat Sheets',
+                to: '/cheat-sheets',
               },
             ],
           },
