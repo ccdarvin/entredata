@@ -63,4 +63,7 @@
   .plugin-id-cheat-sheets .col--7 {
     --ifm-col-width: 100%;
   }
+  footer {
+    display: none !important;
+  }
 }
