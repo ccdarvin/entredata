@@ -1,0 +1,73 @@
+---
+title: Linear models in scikit-learn
+description: cheat sheet for linear models in scikit-learn
+authors: [ccdarvin]
+data: 2023-06-08
+tags: [scikit-learn, linear-models]
+---
+
+import CheatSheet from '@site/src/components/CheatSheet'
+
+
+# Linear models in scikit-learn
+
+<CheatSheet header="Linear Regression">
+
+> Fits a linear model with coefficients $w = (w1, …, wp)$ to minimize the residual sum of squares between the observed targets in the dataset, and the targets predicted by the linear approximation.
+> - model equation: $y = b_0 + b_1x_1 + b_2x_2 + ... + b_px_p$
+
+```python
+from sklearn.linear_model import LinearRegression
+lr = LinearRegression()
+```
+
+</CheatSheet>
+
+<CheatSheet header="Ridge Regression">
+
+> Applies L2 regularization to reduce the complexity of the model and prevent overfitting.
+> - model equation: $y = b_0 + b_1x_1 + b_2x_2 + ... + b_px_p - \alpha \sum_{j=1}^{p} b_j^2$
+
+* if $\alpha = 0$, then the model is the same as Linear Regression
+* if $\alpha = \infty$, then all coefficients are zero, and the result is a constant mean
+
+```python
+from sklearn.linear_model import Ridge
+ridge = Ridge(alpha=1.0)
+```
+
+</CheatSheet>
+
+<CheatSheet header="Lasso Regression">
+
+> Applies L1 regularization to reduce the complexity of the model and prevent overfitting.
+> - model equation: $y = b_0 + b_1x_1 + b_2x_2 + ... + b_px_p - \alpha \sum_{j=1}^{p} |b_j|$
+> *In this case 
+
+```python
+from sklearn.linear_model import Lasso
+lasso = Lasso(alpha=1.0)
+```
+
+</CheatSheet>
+
+<CheatSheet>
+</CheatSheet>
+
+<CheatSheet>
+</CheatSheet>
+
+<CheatSheet>
+</CheatSheet>
+
+<CheatSheet>
+</CheatSheet>
+
+<CheatSheet>
+</CheatSheet>
+
+<CheatSheet>
+</CheatSheet>
+
+<CheatSheet>
+</CheatSheet>
