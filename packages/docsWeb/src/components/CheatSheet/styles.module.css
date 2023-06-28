@@ -14,19 +14,29 @@
     @page {
         size: A4 landscape;
         margin: 0;
+        font-size: 8pt;
     }
     .header {
+        font-size: 0.7rem;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         color: #333;
+        padding: 10px 7px;
+    }
+    .item * {
+        font-size: 6.5pt;
     }
 }
 
-.container {
+.item {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-size: 0.7rem;
     --ifm-global-shadow-lw: None;
 }
-.container:hover {
+.item .theme-code-block {
+    margin-bottom: 0;
+}
+
+.item:hover {
     font-size: 0.8rem;
 }
 
@@ -34,8 +44,6 @@
     padding-left: 10px;
     margin-bottom: 10px;
 }
-
-
 .item + .item {
     margin-top: 1rem;
 }

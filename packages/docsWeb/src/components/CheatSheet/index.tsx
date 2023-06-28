@@ -13,8 +13,10 @@ export default function CheatSheet({
   header: React.ReactNode
 }) {
 
-  return <div className={clsx(styles.container, styles.item)}>
-    <Header>{header}</Header>
+  return <div className={clsx(styles.item)}>
+    {header && <Header>
+      {header}
+    </Header>}
     <Content>
       {children}
     </Content>

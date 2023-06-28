@@ -55,6 +55,7 @@
     columns: 18rem;
     gap: 1rem;
     counter-reset: grid;
+    font-size: 0.7rem;
   }
   .plugin-id-cheat-sheets .col--7 {
     --ifm-col-width: 100%;
