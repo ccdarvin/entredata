@@ -36,17 +36,20 @@
 
 
 .plugin-id-cheat-sheets .markdown{
-  columns: 19rem;
+  columns: 24rem;
   gap: 1rem;
   counter-reset: grid;
 }
 
 .plugin-id-cheat-sheets .col--7 {
-  --ifm-col-width: calc(9 / 12 * 100%);
+  --ifm-col-width: calc(9.5 / 12 * 100%);
+}
+.plugin-id-cheat-sheets .col--3 {
+  --ifm-col-width: calc(2.5 / 12 * 100%);
 }
 @media (min-width: 1440px) {
   .container.margin-vert--lg {
-    --ifm-container-width-xl: 1700px;
+    --ifm-container-width-xl: 1920px;
   }
 }
 
