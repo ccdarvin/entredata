@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[3307],{1636:e=>{e.exports=JSON.parse('{"label":"linear-models","permalink":"/cheat-sheets/tags/linear-models","allTagsPath":"/cheat-sheets/tags","count":1}')}}]);
