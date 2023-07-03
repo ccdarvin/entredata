@@ -32,6 +32,9 @@
 .content > div:last-child {
     margin-bottom: 0;
 }
+.content > table {
+    display: table;
+}
 
 .item {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
