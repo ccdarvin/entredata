@@ -11,10 +11,21 @@ import CheatSheet from '@site/src/components/CheatSheet'
 
 # Linear models in scikit-learn
 
+<CheatSheet header="Linear Model">
+
+> The following linear models are available in scikit-learn for regression and classification tasks, if $y$ is the target variable, $x$ is the feature vector, and $w$ is the weight vector
+> - $y = w_0 + w_1x_1 + w_2x_2 + ... + w_px_p$
+
+- $w_0$ is the `intercept_`
+- $w_1, w_2, ..., w_p$ are the `coef_`
+
+
+</CheatSheet>
+
 <CheatSheet header="Linear Regression">
 
 > Fits a linear model with coefficients $w = (w1, …, wp)$ to minimize the residual sum of squares between the observed targets in the dataset, and the targets predicted by the linear approximation.
-> - model equation: $y = b_0 + b_1x_1 + b_2x_2 + ... + b_px_p$
+> - $\min_{w} || X w - y||_2^2$
 
 ```python
 from sklearn.linear_model import LinearRegression
@@ -26,14 +37,15 @@ lr = LinearRegression()
 <CheatSheet header="Ridge Regression">
 
 > Applies L2 regularization to reduce the complexity of the model and prevent overfitting.
-> - model equation: $y = b_0 + b_1x_1 + b_2x_2 + ... + b_px_p - \alpha \sum_{j=1}^{p} b_j^2$
+> - $\min_{w} || X w - y||_2^2 + \alpha ||w||_2^2$
 
 * if $\alpha = 0$, then the model is the same as Linear Regression
-* if $\alpha = \infty$, then all coefficients are zero, and the result is a constant mean
 
 ```python
 from sklearn.linear_model import Ridge
 ridge = Ridge(alpha=1.0)
+
+from sklearn.linear_model import RidgeCV 
 ```
 
 </CheatSheet>
@@ -41,8 +53,9 @@ ridge = Ridge(alpha=1.0)
 <CheatSheet header="Lasso Regression">
 
 > Applies L1 regularization to reduce the complexity of the model and prevent overfitting.
-> - model equation: $y = b_0 + b_1x_1 + b_2x_2 + ... + b_px_p - \alpha \sum_{j=1}^{p} |b_j|$
-> *In this case 
+> - $\min_{w} || X w - y||_2^2 + \alpha ||w||_1$
+
+* if $\alpha = 0$, then the model is the same as Linear Regression
 
 ```python
 from sklearn.linear_model import Lasso
@@ -51,23 +64,91 @@ lasso = Lasso(alpha=1.0)
 
 </CheatSheet>
 
-<CheatSheet>
+<CheatSheet header="Elastic Net Regression">
+
+> Applies both L1 and L2 regularization to reduce the complexity of the model and prevent overfitting.
+> - $\min_{w} || X w - y||_2^2 + \alpha \rho ||w||_1 + \frac{\alpha(1-\rho)}{2} ||w||_2^2$
+
+* if $\alpha = 0$, and $l1\_ratio = 0$, then the model is the same as Linear Regression
+
+```python
+from sklearn.linear_model import ElasticNet
+elastic_net = ElasticNet(alpha=1.0, l1_ratio=0.5)
+```
+
 </CheatSheet>
 
-<CheatSheet>
+<CheatSheet header="Polynomial Regression">
+
+> Generates polynomial features and fits a linear model to the transformed data.
+> - $y = w_0 + w_1x_1 + w_2x_2 + w_3x_1^2 + w_4x_1x_2 + w_5x_2^2 + ...$
+
+```python
+from sklearn.preprocessing import PolynomialFeatures
+from sklearn.linear_model import LinearRegression
+from sklearn.pipeline import make_pipeline
+
+poly = PolynomialFeatures(degree=2)
+poly_reg = make_pipeline(poly, LinearRegression())
+```
+
 </CheatSheet>
 
-<CheatSheet>
+<CheatSheet header="Logistic Regression">
+
+> Use when you want to predict a binary outcome (0 or 1, yes or no, true or false) given a set of independent variables.
+> - $y = \frac{1}{1 + e^{-(w_0 + w_1x_1 + w_2x_2 + ... + w_px_p)}}$
+
+```python
+from sklearn.linear_model import LogisticRegression
+log_reg = LogisticRegression()
+```
+
 </CheatSheet>
 
-<CheatSheet>
+<CheatSheet header="Stocastic Gradient Descent">
+
+> Use when you want to train large datasets.
+> - $w_{t+1} = w_t - \eta \nabla Q_i(w_t)$
+
+```python
+from sklearn.linear_model import SGDClassifier, SGDRegressor
+sgd_clf = SGDClassifier()
+sgd_reg = SGDRegressor()
+```
 </CheatSheet>
 
-<CheatSheet>
+<CheatSheet header='Bayesian Ridge Regression'>
+
+> Bayesian Ridge Regression is similar to Ridge Regression, but it introduces a prior on the weights $w$.
+> - Original Algorithm is detailed in the book `Bayesian learning for neural networks`
+
+```python
+from sklearn.linear_model import BayesianRidge
+bayesian_ridge = BayesianRidge()
+```
+
 </CheatSheet>
 
-<CheatSheet>
+<CheatSheet header='Passive Aggressive'>
+
+> Passive Aggressive algorithms are a family of algorithms for large-scale learning
+
+```python
+from sklearn.linear_model import PassiveAggressiveClassifier, PassiveAggressiveRegressor
+passive_aggressive_clf = PassiveAggressiveClassifier()
+passive_aggressive_reg = PassiveAggressiveRegressor()
+```
+
 </CheatSheet>
 
-<CheatSheet>
+<CheatSheet header='RANSAC Regression'>
+
+> RANSAC (RANdom SAmple Consensus) is an iterative algorithm for the robust estimation of parameters from a subset of inliers from the complete data set.
+
+```python
+from sklearn.linear_model import RANSACRegressor
+ransac_reg = RANSACRegressor()
+```
+
 </CheatSheet>
