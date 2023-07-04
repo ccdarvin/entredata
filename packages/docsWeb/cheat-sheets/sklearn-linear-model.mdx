@@ -38,6 +38,7 @@ lr = LinearRegression()
 
 > Applies L2 regularization to reduce the complexity of the model and prevent overfitting.
 > - $\min_{w} || X w - y||_2^2 + \alpha ||w||_2^2$
+> - Hyperparameter $\alpha$
 
 * if $\alpha = 0$, then the model is the same as Linear Regression
 
@@ -54,8 +55,10 @@ from sklearn.linear_model import RidgeCV
 
 > Applies L1 regularization to reduce the complexity of the model and prevent overfitting.
 > - $\min_{w} || X w - y||_2^2 + \alpha ||w||_1$
+> - Hyperparameter $\alpha$
 
 * if $\alpha = 0$, then the model is the same as Linear Regression
+
 
 ```python
 from sklearn.linear_model import Lasso
@@ -68,6 +71,7 @@ lasso = Lasso(alpha=1.0)
 
 > Applies both L1 and L2 regularization to reduce the complexity of the model and prevent overfitting.
 > - $\min_{w} || X w - y||_2^2 + \alpha \rho ||w||_1 + \frac{\alpha(1-\rho)}{2} ||w||_2^2$
+> - Hyperparameter $\alpha$ and $l1\_ratio$
 
 * if $\alpha = 0$, and $l1\_ratio = 0$, then the model is the same as Linear Regression
 
@@ -82,6 +86,8 @@ elastic_net = ElasticNet(alpha=1.0, l1_ratio=0.5)
 
 > Generates polynomial features and fits a linear model to the transformed data.
 > - $y = w_0 + w_1x_1 + w_2x_2 + w_3x_1^2 + w_4x_1x_2 + w_5x_2^2 + ...$
+> - Hyperparameter `degree`
+
 
 ```python
 from sklearn.preprocessing import PolynomialFeatures
@@ -99,6 +105,7 @@ poly_reg = make_pipeline(poly, LinearRegression())
 > Use when you want to predict a binary outcome (0 or 1, yes or no, true or false) given a set of independent variables.
 > - $y = \frac{1}{1 + e^{-(w_0 + w_1x_1 + w_2x_2 + ... + w_px_p)}}$
 
+
 ```python
 from sklearn.linear_model import LogisticRegression
 log_reg = LogisticRegression()
@@ -110,6 +117,7 @@ log_reg = LogisticRegression()
 
 > Use when you want to train large datasets.
 > - $w_{t+1} = w_t - \eta \nabla Q_i(w_t)$
+> - Hyperparameter `eta0` is the learning rate
 
 ```python
 from sklearn.linear_model import SGDClassifier, SGDRegressor
@@ -122,6 +130,7 @@ sgd_reg = SGDRegressor()
 
 > Bayesian Ridge Regression is similar to Ridge Regression, but it introduces a prior on the weights $w$.
 > - Original Algorithm is detailed in the book `Bayesian learning for neural networks`
+> - Hyperparameter `alpha_1`, `alpha_2`, `lambda_1`, `lambda_2`
 
 ```python
 from sklearn.linear_model import BayesianRidge
@@ -152,3 +161,4 @@ ransac_reg = RANSACRegressor()
 ```
 
 </CheatSheet>
+
