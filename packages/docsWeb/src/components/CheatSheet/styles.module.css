@@ -32,9 +32,11 @@
 .content > div:last-child {
     margin-bottom: 0;
 }
-.content > table {
+.content  table {
     display: table;
+    width: 100%;
 }
+
 
 .item {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

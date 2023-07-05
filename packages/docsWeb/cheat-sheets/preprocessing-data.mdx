@@ -1,0 +1,137 @@
+---
+title: Preprocesamiento de datos para machine learning
+description: Cheat Sheet de preprocesamiento de datos para machine learning con scikit-learn
+date: 2023-07-05
+tags: [machine learning, scikit-learn, preprocessing]
+authors: [ccdarvin]
+---
+
+# Preprocesamiento de datos para machine learning - scikit-learn
+
+import CheatSheet from '@site/src/components/CheatSheet';
+
+<CheatSheet header="Encoder data">
+
+## Dummy 
+
+<table>
+    <thead>
+        <tr>
+            <th>Variable</th>
+            <th colspan="3">Dummy</th>
+        </tr>
+        <tr>
+            <th>color</th>
+            <th>color_rojo</th>
+            <th>color_verde</th>
+            <th>color_azul</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>rojo</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>verde</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>azul</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+    </tbody>
+</table>
+
+```python
+from sklearn.preprocessing import OneHotEncoder
+encoder = OneHotEncoder()
+encoder.fit_transform(X)
+```
+
+```python
+import pandas as pd
+pd.get_dummies(X)
+```
+
+## Label
+
+<table>
+    <thead>
+        <tr>
+            <th>Variable</th>
+            <th>Label</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>rojo</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>verde</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>azul</td>
+            <td>2</td>
+        </tr>
+    </tbody>
+</table>
+    
+```python
+from sklearn.preprocessing import LabelEncoder
+encoder = LabelEncoder()
+encoder.fit_transform(X)
+```
+
+```python
+import pandas as pd
+df = pd.DataFrame({'color': ['rojo', 'verde', 'azul']})
+df['color'].astype('category').cat.codes
+```
+
+</CheatSheet>
+
+<CheatSheet header="Missing data">
+Es importante tener en cuenta que los modelos de machine learning no pueden trabajar con valores nulos, por lo que es necesario reemplazarlos por algún valor.
+
+## Eliminar
+
+Si hay muchos valores nulos, se puede eliminar la columna o fila, tener en cuenta que se puede perder información importante.
+
+```python
+df.dropna()
+```
+
+## Imputar
+
+```python
+from sklearn.impute import SimpleImputer
+imputer = SimpleImputer(strategy='mean')
+imputer.fit_transform(X)
+```
+
+# crear columna indicadora
+
+```python
+from sklearn.impute import MissingIndicator
+indicator = MissingIndicator()
+indicator.fit_transform(X)
+```
+
+# Evaluar la importancia de las variables
+
+```python
+from sklearn.feature_selection import f_classif, mutual_info_classif
+f_classif(X, y)
+```
+
+</CheatSheet>
+
