@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[3774],{2746:e=>{e.exports=JSON.parse('{"label":"machine learning","permalink":"/en/cheat-sheets/tags/machine-learning","allTagsPath":"/en/cheat-sheets/tags","count":1}')}}]);
