@@ -41,6 +41,28 @@
   counter-reset: grid;
 }
 
+.plugin-id-cheat-sheets header {
+  position: relative;
+}
+
+.plugin-id-cheat-sheets header > h1 {
+  font-size: 2.0rem;
+} 
+
+.plugin-id-cheat-sheets header > div {
+  position: absolute;
+}
+
+/* second element */
+.plugin-id-cheat-sheets header > div:nth-child(2) {
+  left: 0;
+  bottom: -2.5rem;
+}
+
+.plugin-id-cheat-sheets .markdown > :first-child {
+  margin-top: 5rem;
+}
+
 .plugin-id-cheat-sheets .col--7 {
   --ifm-col-width: calc(9.5 / 12 * 100%);
 }

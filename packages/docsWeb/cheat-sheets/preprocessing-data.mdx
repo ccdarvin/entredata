@@ -10,6 +10,36 @@ authors: [ccdarvin]
 
 import CheatSheet from '@site/src/components/CheatSheet';
 
+<CheatSheet header="Missing data">
+
+Es importante tener en cuenta que los modelos de machine learning no pueden trabajar con valores nulos, por lo que es necesario reemplazarlos por algún valor.
+
+## Eliminar
+
+Si hay muchos valores nulos, se puede eliminar la columna o fila, tener en cuenta que se puede perder información importante.
+
+```python
+df.dropna()
+```
+
+## Imputar
+
+```python
+from sklearn.impute import SimpleImputer
+imputer = SimpleImputer(strategy='mean')
+imputer.fit_transform(X)
+```
+
+# crear columna indicadora
+
+```python
+from sklearn.impute import MissingIndicator
+indicator = MissingIndicator()
+indicator.fit_transform(X)
+```
+
+</CheatSheet>
+
 <CheatSheet header="Encoder data">
 
 ## Dummy 
@@ -99,38 +129,140 @@ df['color'].astype('category').cat.codes
 
 </CheatSheet>
 
-<CheatSheet header="Missing data">
-Es importante tener en cuenta que los modelos de machine learning no pueden trabajar con valores nulos, por lo que es necesario reemplazarlos por algún valor.
+<CheatSheet header="Scaling and Centering Data">
 
-## Eliminar
+## StandardScaler
 
-Si hay muchos valores nulos, se puede eliminar la columna o fila, tener en cuenta que se puede perder información importante.
+* $\frac{x - \mu}{\sigma}$
 
 ```python
-df.dropna()
+from sklearn.preprocessing import StandardScaler
+scaler = StandardScaler()
+scaler.fit_transform(X)
 ```
 
-## Imputar
+## MinMaxScaler
+
+* $\frac{x - min}{max - min}$
 
 ```python
-from sklearn.impute import SimpleImputer
-imputer = SimpleImputer(strategy='mean')
-imputer.fit_transform(X)
+from sklearn.preprocessing import MinMaxScaler
+scaler = MinMaxScaler()
+scaler.fit_transform(X)
 ```
 
-# crear columna indicadora
+## RobustScaler
+
+* $\frac{x - Q_1}{Q_3 - Q_1}$
 
 ```python
-from sklearn.impute import MissingIndicator
-indicator = MissingIndicator()
-indicator.fit_transform(X)
+from sklearn.preprocessing import RobustScaler
+scaler = RobustScaler()
+scaler.fit_transform(X)
 ```
 
-# Evaluar la importancia de las variables
+## Normalizer
+
+* L1: $\frac{x}{\sum_{i=1}^n |x_i|}$
+* L2: $\frac{x}{\sqrt{\sum_{i=1}^n x_i^2}}$
+* max: $\frac{x}{max(x)}$
 
 ```python
-from sklearn.feature_selection import f_classif, mutual_info_classif
-f_classif(X, y)
+
+from sklearn.preprocessing import Normalizer
+# L1, L2, max
+scaler = Normalizer(norm='l2')
+scaler.fit_transform(X)
+```
+
+</CheatSheet>
+
+<CheatSheet header="Feature engineering">
+
+## PolynomialFeatures
+
+* $x_1, x_2 \rightarrow x_1^2, x_1x_2, x_2^2$
+
+```python
+from sklearn.preprocessing import PolynomialFeatures
+poly = PolynomialFeatures(degree=2)
+poly.fit_transform(X)
+```
+
+## Binning
+
+Este proceso se utiliza para discretizar variables continuas, es decir, convertir variables continuas en variables categóricas, agrupando los valores en intervalos.
+
+
+* $x \rightarrow \{0, 1, 2,..., n\}$
+
+```python
+from sklearn.preprocessing import KBinsDiscretizer
+discretizer = KBinsDiscretizer(n_bins=3, encode='ordinal', strategy='uniform')
+discretizer.fit_transform(X)
+```
+
+</CheatSheet>
+
+<CheatSheet header="Feature selection">
+
+## VarianceThreshold
+
+
+```python
+
+from sklearn.feature_selection import VarianceThreshold
+selector = VarianceThreshold(threshold=0.1)
+selector.fit_transform(X)
+```
+
+## SelectKBest
+
+```python
+from sklearn.feature_selection import SelectKBest
+from sklearn.feature_selection import chi2
+selector = SelectKBest(chi2, k=2)
+selector.fit_transform(X, y)
+```
+
+## SelectFromModel
+
+```python
+from sklearn.feature_selection import SelectFromModel
+from sklearn.linear_model import LogisticRegression
+selector = SelectFromModel(estimator=LogisticRegression())
+selector.fit_transform(X, y)
+```
+
+## RFE
+
+```python
+
+from sklearn.feature_selection import RFE
+from sklearn.linear_model import LogisticRegression
+selector = RFE(estimator=LogisticRegression(), n_features_to_select=2)
+selector.fit_transform(X, y)
+```
+
+</CheatSheet>
+
+
+<CheatSheet header="Dimensionality reduction">
+
+## PCA
+
+```python
+from sklearn.decomposition import PCA
+pca = PCA(n_components=2)
+pca.fit_transform(X)
+```
+
+## LDA
+
+```python
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+lda = LinearDiscriminantAnalysis(n_components=2)
+lda.fit_transform(X, y)
 ```
 
 </CheatSheet>
