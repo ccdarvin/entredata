@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[6475],{4564:e=>{e.exports=JSON.parse('{"label":"data","permalink":"/en/cheat-sheets/tags/data","allTagsPath":"/en/cheat-sheets/tags","count":1}')}}]);
