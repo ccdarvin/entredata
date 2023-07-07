@@ -5,14 +5,14 @@ import Translate, {translate} from '@docusaurus/Translate';
 
 type FeatureItem = {
   title: JSX.Element | string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  Svg: JSX.Element | string | null;
   description: JSX.Element;
 };
 
 const FeatureList: FeatureItem[] = [
   {
     title: <Translate>Articulos</Translate>,
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: 'string',
     description: (
       <>
         Articulos breves sobre temas de ciencia de datos, inteligencia artificial y machine learning.
@@ -21,10 +21,19 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: <Translate>Tutoriales</Translate>,
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: 'string',
     description: (
       <>
         Tutoriales sobre como usar herramientas de ciencia de datos, inteligencia artificial y machine learning.
+      </>
+    ),
+  },
+  {
+    title: <Translate>Cheat Sheets</Translate>,
+    Svg: 'string',
+    description: (
+      <>
+        Cheat sheets con lo mas importante que debes saber sobre ciencia de datos, inteligencia artificial y machine learning.
       </>
     ),
   },
@@ -34,7 +43,7 @@ function Feature({title, Svg, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        {/*<Svg className={styles.featureSvg} role="img" />*/}
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
