@@ -69,7 +69,7 @@ const config = {
           remarkPlugins: [math],
           rehypePlugins: [katex],
           include: ['*.md', '*.mdx'],
-          blogSidebarCount: 20,
+          blogSidebarCount: 100,
           blogSidebarTitle: 'Artículos recientes',
           feedOptions: {
             type: 'all',
@@ -88,7 +88,6 @@ const config = {
         sitemap: {
           changefreq: 'weekly',
           priority: 0.5,
-          ignorePatterns: ['/tags/**'],
           filename: 'sitemap.xml'
         }
       }),
@@ -115,9 +114,14 @@ const config = {
         remarkPlugins: [math],
         rehypePlugins: [katex],
         include: ['*.md', '*.mdx'],
-        blogSidebarCount: 20,
+        blogSidebarCount: 100,
       }
-    ]
+    ],
+    [ 
+      require.resolve('docusaurus-lunr-search'), {
+        languages: ['es', 'en'] // language codes
+      }
+   ]
   ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -190,6 +194,9 @@ const config = {
         darkTheme: darkCodeTheme,
         additionalLanguages: ['r', 'java']
       },
+      metadata: [
+        {name: 'keywords', content: 'entredata, ciencia de datos, machine learning, inteligencia artificial, programación'},
+      ]
     }),
 };
 

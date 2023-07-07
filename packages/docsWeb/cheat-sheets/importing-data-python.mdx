@@ -1,0 +1,117 @@
+---
+title: Importar datos de diferentes fuentes con Python
+description: Cheatsheet para importar datos de diferentes fuentes con Python
+authors: [ccdarvin]
+tags: [python, pandas, data]
+date: 2023-07-07
+---
+
+# Importar datos de diferentes fuentes con Python
+
+import CheatSheet from '@site/src/components/CheatSheet';
+
+<CheatSheet header="Flat files">
+
+## CSV
+
+```python
+import pandas as pd
+pd.read_csv('file.csv')
+pd.read_csv('file.txt', sep='\t')
+```
+
+</CheatSheet>
+
+<CheatSheet header="Excel">
+
+```python
+import pandas as pd
+wb = pd.ExcelFile('file.xlsx')
+wb.sheet_names # Nombre de las hojas
+df = wb.parse('Sheet1') # Leer hoja
+```
+
+</CheatSheet>
+
+<CheatSheet header="SAS">
+
+```python
+from sas7bdat import SAS7BDAT
+with SAS7BDAT('file.sas7bdat') as file:
+    df_sas = file.to_data_frame()
+```
+</CheatSheet>
+
+<CheatSheet header="Stata">
+
+```python
+import pandas as pd
+df = pd.read_stata('file.dta')
+```
+
+</CheatSheet>
+
+<CheatSheet header="HDF5">
+
+Los archivos HDF5 son una buena opción para guardar grandes cantidades de datos. Se pueden leer con la librería `h5py`
+
+```python
+import h5py
+data = h5py.File('file.hdf5', 'r')
+data.keys() # Nombre de los grupos
+
+group = data['group'] # Leer grupo
+group.keys() # Nombre de los datasets
+
+dataset = group['dataset'] # Leer dataset
+dataset.shape # Dimensiones
+dataset.value # Valores
+```
+
+</CheatSheet>
+
+<CheatSheet header="Matlab">
+
+```python
+import scipy.io
+mat = scipy.io.loadmat('file.mat')
+```
+
+</CheatSheet>
+
+<CheatSheet header="Pickled files">
+
+Los archivos pickled son archivos binarios de Python. Se pueden leer con la librería `pickle`
+
+```python
+import pickle
+with open('file.pkl', 'rb') as file:
+    data = pickle.load(file)
+```
+
+</CheatSheet>
+
+<CheatSheet header="SQL">
+
+```python
+from sqlalchemy import create_engine
+engine = create_engine('sqlite:///file.sqlite')
+table_names = engine.table_names() # Nombre de las tablas
+
+with engine.connect() as con:
+    rs = con.execute('SELECT * FROM table')
+    df = pd.DataFrame(rs.fetchall())
+    df.columns = rs.keys()
+```
+## Con Pandas
+
+```python
+import pandas as pd
+from sqlalchemy import create_engine
+engine = create_engine('sqlite:///file.sqlite')
+
+df = pd.read_sql_query('SELECT * FROM table', engine)
+```
+</CheatSheet>
+
+
