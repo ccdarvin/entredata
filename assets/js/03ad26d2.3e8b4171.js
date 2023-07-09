@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[7400],{8838:e=>{e.exports=JSON.parse('{"permalink":"/cheat-sheets/tags/scipy","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Cheat Sheets"}')}}]);

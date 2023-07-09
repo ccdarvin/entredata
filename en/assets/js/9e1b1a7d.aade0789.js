@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[3539],{2219:e=>{e.exports=JSON.parse('{"label":"numpy","permalink":"/en/cheat-sheets/tags/numpy","allTagsPath":"/en/cheat-sheets/tags","count":1}')}}]);

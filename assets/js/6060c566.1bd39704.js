@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[2926],{3624:e=>{e.exports=JSON.parse('{"label":"muestreo","permalink":"/cheat-sheets/tags/muestreo","allTagsPath":"/cheat-sheets/tags","count":1}')}}]);
