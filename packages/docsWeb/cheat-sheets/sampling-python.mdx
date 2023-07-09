@@ -1,0 +1,141 @@
+---
+title: Muestreo con python
+description: Cheatsheet de muestreo con python
+authors: [ccdarvin]
+date: 2023-07-09
+tags: [python, muestreo, numpy, pandas, scipy]
+---
+
+# Muestreo con python
+
+import CheatSheet from '@site/src/components/CheatSheet';
+
+<CheatSheet>
+
+```python
+import numpy as np
+import pandas as pd
+from scipy import stats
+```
+
+</CheatSheet>
+
+
+<CheatSheet header="Muestreo aleatorio">
+
+```python
+np.random.random(10)
+np.random.randint(0, 100, 10)
+colors = ['red', 'blue', 'green']
+np.random.choice(colors, 10)
+```
+## Con reemplazo
+
+```python
+np.random.choice(colors, 10, replace=True)
+```
+
+</CheatSheet>
+
+<CheatSheet header="Distribucion normal">
+
+parametros: $\mu$ media, $\sigma$ desviacion estandar y $n$ tamaño de la muestra
+
+```python
+np.random.normal(0, 1, 10)
+```
+
+```python
+stats.norm.rvs(0, 1, 10)
+```
+
+</CheatSheet>
+
+<CheatSheet header="Distribucion uniforme">
+
+parametros: $a$ minimo, $b$ maximo y $n$ tamaño de la muestra
+
+```python
+np.random.uniform(0, 1, 10)
+```
+
+```python
+stats.uniform.rvs(0, 1, 10)
+```
+
+</CheatSheet>
+
+
+<CheatSheet header="Distribucion binomial">
+
+parametros: $n$ numero de ensayos, $p$ probabilidad de exito y $n$ tamaño de la muestra
+
+```python
+np.random.binomial(10, 0.5, 10)
+```
+
+```python
+stats.binom.rvs(10, 0.5, 10)
+```
+
+</CheatSheet>
+
+<CheatSheet header="Distribucion poisson">
+
+parametros: $\lambda$ tasa de ocurrencia y $n$ tamaño de la muestra
+
+```python
+np.random.poisson(10, 10)
+```
+
+```python
+stats.poisson.rvs(10, 10)
+```
+
+</CheatSheet>
+
+<CheatSheet header="Distribucion exponencial">
+
+parametros: $\lambda$ tasa de ocurrencia y $n$ tamaño de la muestra
+
+```python
+np.random.exponential(10, 10)
+```
+
+```python
+stats.expon.rvs(10, 10)
+```
+
+</CheatSheet>
+
+<CheatSheet header="Muestreo estratificado">
+
+```python
+df = pd.DataFrame({
+    'sexo': np.random.choice(['M', 'F'], 100),
+    'edad': np.random.randint(18, 65, 100),
+    'estado_civil': np.random.choice(['S', 'C', 'D', 'V'], 100),
+    'ingreso': np.random.randint(1000, 10000, 100)
+})
+
+df.groupby('sexo').apply(lambda x: x.sample(10))
+```
+
+</CheatSheet>
+
+<CheatSheet header="Muestreo sistematico">
+
+```python
+df = pd.DataFrame({
+    'sexo': np.random.choice(['M', 'F'], 100),
+    'edad': np.random.randint(18, 65, 100),
+    'estado_civil': np.random.choice(['S', 'C', 'D', 'V'], 100),
+    'ingreso': np.random.randint(1000, 10000, 100)
+})
+
+df.iloc[::10] # selecciona cada 10 filas
+```
+
+</CheatSheet>
+
+
