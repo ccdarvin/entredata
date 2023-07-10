@@ -26,9 +26,10 @@ pd.read_csv('file.txt', sep='\t')
 
 ```python
 import pandas as pd
-wb = pd.ExcelFile('file.xlsx')
-wb.sheet_names # Nombre de las hojas
-df = wb.parse('Sheet1') # Leer hoja
+# en caso de que sheetname, no este asignado, se lee la primera hoja
+xls = pd.ExcelFile('file.xlsx', sheetname=None) # Leer todas las hojas
+xls.keys() # Nombre de las hojas
+xls['sheet'] # Leer hoja
 ```
 
 </CheatSheet>
