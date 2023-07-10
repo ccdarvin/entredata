@@ -16,9 +16,11 @@ import CheatSheet from '@site/src/components/CheatSheet';
 
 ```python
 import pandas as pd
-pd.read_csv('file.csv')
+# puede ser un file o una url
+pd.read_csv('file.csv') 
 pd.read_csv('file.txt', sep='\t')
 ```
+
 
 </CheatSheet>
 
@@ -26,6 +28,7 @@ pd.read_csv('file.txt', sep='\t')
 
 ```python
 import pandas as pd
+# puede ser un file o una url
 # en caso de que sheetname, no este asignado, se lee la primera hoja
 xls = pd.ExcelFile('file.xlsx', sheetname=None) # Leer todas las hojas
 xls.keys() # Nombre de las hojas
@@ -47,6 +50,7 @@ with SAS7BDAT('file.sas7bdat') as file:
 
 ```python
 import pandas as pd
+# puede ser un file o una url
 df = pd.read_stata('file.dta')
 ```
 
@@ -114,5 +118,4 @@ engine = create_engine('sqlite:///file.sqlite')
 df = pd.read_sql_query('SELECT * FROM table', engine)
 ```
 </CheatSheet>
-
 
