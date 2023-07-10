@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[9119],{6837:e=>{e.exports=JSON.parse('{"label":"beautifulsoup","permalink":"/en/article/tags/beautifulsoup","allTagsPath":"/en/article/tags","count":1}')}}]);
