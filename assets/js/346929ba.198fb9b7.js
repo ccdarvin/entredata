@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[1040],{6286:e=>{e.exports=JSON.parse('{"permalink":"/article/tags/python","page":1,"postsPerPage":10,"totalPages":1,"totalCount":9,"blogDescription":"Blog","blogTitle":"Art\xedculos"}')}}]);
