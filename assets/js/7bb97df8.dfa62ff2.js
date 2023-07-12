@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[4038],{9990:a=>{a.exports=JSON.parse('{"label":"matplotlib","permalink":"/article/tags/matplotlib","allTagsPath":"/article/tags","count":1}')}}]);

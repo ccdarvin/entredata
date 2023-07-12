@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[438],{145:a=>{a.exports=JSON.parse('{"label":"finanzas","permalink":"/article/tags/finanzas","allTagsPath":"/article/tags","count":1}')}}]);
