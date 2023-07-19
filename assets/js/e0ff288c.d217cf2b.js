@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[5054],{484:e=>{e.exports=JSON.parse('{"label":"series temporales","permalink":"/article/tags/series-temporales","allTagsPath":"/article/tags","count":1}')}}]);

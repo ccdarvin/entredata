@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[2425],{2077:e=>{e.exports=JSON.parse('{"label":"resampling","permalink":"/en/article/tags/resampling","allTagsPath":"/en/article/tags","count":1}')}}]);

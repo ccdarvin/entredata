@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[8862],{5007:e=>{e.exports=JSON.parse('{"permalink":"/en/article/tags/pandas","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Art\xedculos"}')}}]);
