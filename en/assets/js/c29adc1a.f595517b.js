@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[1308],{8412:e=>{e.exports=JSON.parse('{"label":"keras","permalink":"/en/article/tags/keras","allTagsPath":"/en/article/tags","count":1}')}}]);

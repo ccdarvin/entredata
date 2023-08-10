@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[1838],{8629:e=>{e.exports=JSON.parse('{"permalink":"/en/article/tags/deep-learning","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Art\xedculos"}')}}]);

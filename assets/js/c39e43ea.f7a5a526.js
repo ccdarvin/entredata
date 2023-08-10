@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocsweb=self.webpackChunkdocsweb||[]).push([[3171],{21:e=>{e.exports=JSON.parse('{"permalink":"/article/page/2","page":2,"postsPerPage":10,"totalPages":2,"totalCount":15,"previousPage":"/article","blogDescription":"Blog","blogTitle":"Art\xedculos"}')}}]);
